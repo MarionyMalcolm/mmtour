@@ -1,0 +1,10 @@
+{
+  "author": "Fujitsu RunMyprocess",
+  "plugins": [
+	"expandable-chapters"
+  ],
+  "pluginsConfig": {
+		"expandable-chapters":{}
+  }
+}
+
