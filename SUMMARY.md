@@ -1,7 +1,9 @@
 # Summary
 
-* [Introduction](README.md)
-* [Gear](/Gear/index.md)
- * [Velo](/Gear/velo.md)
- * [Camping](/Gear/camping.md)
- * [Voyage](/Gear/voyage.md)
+* [Intro](README.md)
+* [Equipo](/equipo/index.md)
+ * [Velo](/equipo/velo.md)
+ * [Camping](/equipo/camping.md)
+ * [Voyage](/equipo/voyage.md)
+* [Plan](/plan/index.md)
+* [Blog](/blog/index.md)

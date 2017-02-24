@@ -1,0 +1,50 @@
+{% block book_header %}
+<div class="book-header" role="navigation">
+    {% if glossary.path %}
+    <a href="{{ ('/' + glossary.path)|resolveFile }}" class="btn pull-left" aria-label="{{ "GLOSSARY_OPEN"|t }}"><i class="fa fa-sort-alpha-asc"></i></a>
+    {% endif %}
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+	</h1>		
+	<div id="P_topMenu">
+				<li id ="intro" class="inactive">
+					<a href="/">Intro</a>
+				</li>
+				<li id ="equipo" class="inactive">
+					<a href="/equipo/index.html">Equipo</a>
+				</li>
+				<li id ="plan" class="inactive">
+					<a href="/plan/index.html">Plan</a>
+				</li>
+				<li id ="blog" class="inactive">
+					<a href="/blog/index.html">Blog</a>
+				</li>
+		</div>
+        <!--a href="{{ "/"|resolveFile }}" >{{ page.title }}</a-->
+	<script language="javascript"> 
+		var str = window.location.pathname.substring(1);
+		str = str.substring(0,str.indexOf("/"));
+		document.getElementById("intro").className = "inactive";
+		document.getElementById("equipo").className = "inactive";
+		document.getElementById("plan").className = "inactive";
+		document.getElementById("blog").className = "inactive";
+		console.log("MALCOLM "+str);
+		switch(str) {
+			case "":
+				document.getElementById("intro").className = "active";
+				break;
+			case "equipo":
+				document.getElementById("equipo").className = "active";
+				break;
+			case "plan":
+				document.getElementById("plan").className = "active";
+				break;
+			case "blog":
+				document.getElementById("blog").className = "active";
+				break;			
+		} 
+	</script>  
+</div>
+
+{% endblock %}
